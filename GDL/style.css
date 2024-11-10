@@ -609,6 +609,11 @@ section {
     box-shadow: 0 4px 100px #f7e9ac80;
   }
 
+  .prince-portrait-wrap.empty:hover {
+    cursor:no-drop;
+    box-shadow: 0 4px 100px #f7e9ac80;
+  }
+
   .check-border:hover {
     margin: -10px;
   }

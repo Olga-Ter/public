@@ -79,7 +79,7 @@ checkBtn.forEach((element, index) => {
   element.addEventListener("click", () => {
     popupLink.setAttribute("href", popupArr[index].location);
     popupLink.textContent = popupArr[index].title;
-    popupLink.setAttribute('target', '_blank');
+    popupLink.setAttribute("target", "_blank");
     popupWin.style.display = "flex";
     if (window.innerWidth > 980)
       popupCnt.style.backgroundImage = `url(${popupArr[index].src})`;
@@ -104,12 +104,17 @@ const princePortraitWrp = document.querySelectorAll(".prince-portrait-wrap");
 const princePortraitImg = document.querySelectorAll(".prince-portrait");
 
 princePortraitWrp.forEach((element, index) => {
-  element.addEventListener("click", () => {
-    window.open(
-      `${window.location.origin}/pages/${princePortraitImg[index]
-        .getAttribute("alt")
-        .toLowerCase()}.html`,
-      "_self"
-    );
-  });
+  if (!element.classList.contains("empty")) {
+    element.addEventListener("click", () => {
+      console.log(`${window.location.origin}/pages/${princePortraitImg[index]
+          .getAttribute("alt")
+          .toLowerCase()}.html`);
+      window.open(
+        `${window.location.origin}/public/GDL/pages/${princePortraitImg[index]
+          .getAttribute("alt")
+          .toLowerCase()}.html`,
+        "_self"
+      );
+    });
+  }
 });
