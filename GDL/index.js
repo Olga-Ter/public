@@ -29,7 +29,7 @@ sevenClassDtn.addEventListener("click", () => {
 });
 
 gameBtn.addEventListener("click", () => {
-  window.open(`${window.location.origin}/pages/games.html`, "_self");
+  window.open(`${window.location.origin}/public/GDL/pages/games.html`, "_self");
 });
 
 document.addEventListener("scroll", () => {
@@ -106,9 +106,6 @@ const princePortraitImg = document.querySelectorAll(".prince-portrait");
 princePortraitWrp.forEach((element, index) => {
   if (!element.classList.contains("empty")) {
     element.addEventListener("click", () => {
-      console.log(`${window.location.origin}/pages/${princePortraitImg[index]
-          .getAttribute("alt")
-          .toLowerCase()}.html`);
       window.open(
         `${window.location.origin}/public/GDL/pages/${princePortraitImg[index]
           .getAttribute("alt")
