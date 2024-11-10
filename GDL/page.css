@@ -138,6 +138,7 @@ body {
 }
 
 .left-text {
+  padding: 4% 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,7 +151,7 @@ body {
 
 .text {
   align-items: center;
-  padding: 2vh 2vh 2vh 3vh;
+  padding: 3vh 1vh 3vh 1vh;
   background-image: url(assets/smallpaper-Dk-dwdEI.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,8 +166,14 @@ body {
   scrollbar-color: rgb(102, 70, 0) rgb(209, 179, 122);
 }
 
+.left-text.along .text-wrap {
+  height: 40vh;
+  /* max-height: 680px; */
+}
+
 .right-text {
   width: 100%;
+  padding: 4% 3%;
 }
 
 .right-text > img {
@@ -185,7 +192,6 @@ body {
 
 @media all and (max-width: 1200px) {
   .app-wrapper-page {
-    height: auto;
     padding-bottom: 100px;
   }
 
@@ -209,10 +215,14 @@ body {
 }
 
 @media all and (max-width: 768px) {
-.heading,
-.sub-heading {
-  font-size: 1.5rem;
-}
+  .app-wrapper-page {
+    height: auto;
+  }
+
+  .heading,
+  .sub-heading {
+    font-size: 1.5rem;
+  }
 
   .main-text {
     grid-template-columns: repeat(1, 1fr);
@@ -220,7 +230,6 @@ body {
   }
 
   .left-text {
-    padding: 3%;
     flex-direction: column-reverse;
     background-image: url(assets/bigpaper-DEPTZNoe.png);
     background-repeat: no-repeat;
@@ -234,11 +243,11 @@ body {
   }
 
   .text {
-    padding: 3vh;
+    padding: 3vh 2vh;
   }
 
   .right-text {
-    padding: 3%;
+    padding: 5% 3%;
     background-image: url(assets/bigpaper-DEPTZNoe.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,10 +261,14 @@ body {
   .sub-heading {
     font-size: 1rem;
   }
-}  
+}
 
 @media (any-hover: hover) {
   .prince-portrait-wrap {
     cursor: pointer;
   }
 }
+
+/* @media all and (max-width: 700px) {
+
+} */
