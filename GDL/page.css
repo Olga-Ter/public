@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("fonts/Merriweather-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 14px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* pages */
+.app-wrapper-page {
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  position: relative;
+  background-image: url(assets/back-B1iViq2B.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* header */
+.header-page,
+.footer-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-info,
+.footer-info {
+  width: 70%;
+}
+
+.footer-page {
+  position: absolute;
+  bottom: 0;
+  transform: rotateX(180deg);
+}
+
+/* nav-pages*/
+.nav-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  margin-top: -3%;
+}
+
+.heading,
+.sub-heading {
+  font-family: Inter, sans-serif;
+  font-size: 2rem;
+  color: #f2e2b1;
+}
+
+.heading {
+  font-weight: 800;
+}
+
+.sub-heading {
+  font-weight: 400;
+}
+
+.back-button {
+  width: 8%;
+  /* position: fixed;
+  top: 2vh;
+  right: 20px; */
+  /* display: none; */
+  background-image: url(assets/dropdown-D5JwNCrQ.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transform: rotate(180deg);
+}
+
+/* main */
+.main-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.prince-portrait-wrap {
+  width: 25%;
+}
+
+.prince-portrait {
+  width: 100%;
+}
+
+.main-text {
+  padding: 2%;
+  width: 60%;
+  max-width: 900px;
+  display: grid;
+  align-content: center;
+  gap: 2%;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-image: url(assets/bigpaper-DEPTZNoe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.left-text {
+  padding: 4% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.crown > img {
+  width: 100%;
+}
+
+.text {
+  align-items: center;
+  padding: 3vh 1vh 3vh 1vh;
+  background-image: url(assets/smallpaper-Dk-dwdEI.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-wrap {
+  height: 20vh;
+  font-size: 1.5rem;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(102, 70, 0) rgb(209, 179, 122);
+}
+
+.left-text.along .text-wrap {
+  height: 40vh;
+  /* max-height: 680px; */
+}
+
+.right-text {
+  width: 100%;
+  padding: 4% 3%;
+}
+
+.right-text > img {
+  width: 100%;
+}
+
+@media all and (max-width: 1440px) {
+  .prince-portrait-wrap {
+    width: 15%;
+  }
+
+  .main-text {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .app-wrapper-page {
+    padding-bottom: 100px;
+  }
+
+  .text-wrap {
+    height: 30vh;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .prince-portrait-wrap {
+    width: 35%;
+  }
+
+  .main-text {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .app-wrapper-page {
+    height: auto;
+  }
+
+  .heading,
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+
+  .main-text {
+    grid-template-columns: repeat(1, 1fr);
+    background: none;
+  }
+
+  .left-text {
+    flex-direction: column-reverse;
+    background-image: url(assets/bigpaper-DEPTZNoe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  .text-wrap {
+    height: 40vh;
+  }
+
+  .text {
+    padding: 3vh 2vh;
+  }
+
+  .right-text {
+    padding: 5% 3%;
+    background-image: url(assets/bigpaper-DEPTZNoe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .heading,
+  .sub-heading {
+    font-size: 1rem;
+  }
+}
+
+@media (any-hover: hover) {
+  .prince-portrait-wrap {
+    cursor: pointer;
+  }
+}
+
+/* @media all and (max-width: 700px) {
+
+} */
