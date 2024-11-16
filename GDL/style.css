@@ -272,6 +272,11 @@ section {
   top: 75%;
 }
 
+.right-ribbon-end {
+  left: 35%;
+  top: 80%;
+}
+
 /* checkButtons */
 .check {
   width: 100%;
