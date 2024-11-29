@@ -41,32 +41,65 @@ backBtnWrp.addEventListener("click", () => {
   window.scrollTo({ top: 0 });
 });
 
+// const popupArr = [
+//   {
+//     location: "https://learningapps.org/view3163944",
+//     title: "ВКЛ в XIII-XIV вв.",
+//     src: "assets/firstCheck-SGD1tZBK.png",
+//   },
+//   {
+//     location: "https://learningapps.org/watch?v=psdor5xdc23",
+//     title: "Правление великих князей ВКЛ",
+//     src: "assets/secCheck-BE8HWKFv.png",
+//   },
+//   {
+//     location: "https://learningapps.org/view10657437",
+//     title: "Укрепление великокняжеской власти",
+//     src: "assets/thirdCheck-GXwJNpXx.png",
+//   },
+//   {
+//     location: "https://learningapps.org/view2317588",
+//     title: "ВКЛ (пазл)",
+//     src: "assets/fourthCheck-rb2Sc4h2.png",
+//   },
+
+//   {
+//     location: "https://learningapps.org/view29425106",
+//     title: "Правители ВКЛ сер. XIII- к. XIV вв.",
+//     src: "assets/fifthCheck-CR1D4Cx_.png",
+//   },
+// ];
+
 const popupArr = [
-  {
-    location: "https://learningapps.org/view3163944",
-    title: "ВКЛ в XIII-XIV вв.",
-    src: "assets/firstCheck-SGD1tZBK.png",
-  },
-  {
-    location: "https://learningapps.org/watch?v=psdor5xdc23",
-    title: "Правление великих князей ВКЛ",
-    src: "assets/secCheck-BE8HWKFv.png",
-  },
   {
     location: "https://learningapps.org/view10657437",
     title: "Укрепление великокняжеской власти",
-    src: "assets/thirdCheck-GXwJNpXx.png",
+    src: "assets/qr0-D_cYjMzt.svg",
   },
   {
-    location: "https://learningapps.org/view2317588",
-    title: "ВКЛ (пазл)",
-    src: "assets/fourthCheck-rb2Sc4h2.png",
+    location: "https://learningapps.org/view17331095",
+    title: "«Великая война» и Грюнвальдская война",
+    src: "assets/qr1-DVqIQZrw.svg",
   },
-
   {
-    location: "https://learningapps.org/view29425106",
-    title: "Правители ВКЛ сер. XIII- к. XIV вв.",
-    src: "assets/fifthCheck-CR1D4Cx_.png",
+    location: "https://learningapps.org/view17469402",
+    title: "Гражданская война 1432-1439",
+    src: "assets/qr2-DyZ4uFAt.svg",
+  },
+  {
+    location: "https://learningapps.org/view16332313",
+    title: "Образование ВКЛ",
+    src: "assets/qr3-BIPNvgq2.svg",
+  },
+  {
+    location: "https://learningapps.org/watch?v=ptxx7ecwk23",
+    title: "ВКЛ в XIII-XIV вв.",
+    src: "assets/qr4-BY6hQ0QR.svg",
+  },
+  {
+    location: "https://learningapps.org/view3163944",
+    title: "Сближение ВКЛ с Польшей",
+    src: "assets/qr5-B29fgBjw.svg",
   },
 ];
 
