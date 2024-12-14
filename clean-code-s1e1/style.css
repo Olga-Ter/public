@@ -1,0 +1,143 @@
+/* basic style */
+li {
+    list-style: none;
+}
+input,
+button {
+  outline: none;
+}
+.page {
+  font-family: Lato, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+/* heading style */
+.task-list-heading {
+  margin: 0;
+  padding: 30px 0 10px;
+  border-bottom: 2px solid #333;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+/* header */
+.header {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  text-align: right;
+}
+.header-heading {
+  display: none;
+}
+.header-img {
+  width: 100%;
+}
+.header-more-link {
+  font-family: fantasy, cursive;
+}
+@media (max-width:768px) {
+  .header {
+    text-align: center;
+  }
+}
+/* tasks list */
+.task-lists {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+.task-size {
+  display: inline-block;
+  width: 56%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  font-size: 18px;
+}
+.task-item-text {
+  height: 21px;
+  margin: 0;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  background: #fff;
+  color: #888;
+}
+.task-item-text:focus {
+  color: #333;
+}
+.btn {
+  width: 60px;
+  border: 0px;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  background: none;
+  color: #888;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #3a3a3a;
+}
+
+/* new task */
+.task-list-add .task-list-heading {
+  margin: 0 auto 20px;
+}
+.new-task-item {
+  display: flex;
+}
+.new-task-label {
+  display: block;
+  margin: 0 0 20px;
+}
+.new-task-text {
+  width: 318px;
+}
+/* task list */
+.task-list-items {
+  margin: 0;
+  padding: 0px;
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.task-item > * {
+  vertical-align: middle;
+}
+.task-item-check {
+  margin: 0 10px;
+}
+.del-btn-img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+.del-btn-img:hover {
+  transform: rotateZ(0);
+}
+/* completed */
+#completed-task-list .task-item-label {
+  color: #888;
+  text-decoration: line-through;
+}
+/* edit task */
+.task-item .task-item-text {
+  display: none;
+}
+.task-item-edit .task-item-text {
+  display: inline-block;
+  width: 224px;
+}
+.task-item-edit .task-item-label {
+  display: none;
+}
